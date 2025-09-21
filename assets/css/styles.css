@@ -78,3 +78,19 @@ input:focus, textarea:focus { border-color: var(--brand); box-shadow: 0 0 0 .2re
   .menu.open { display: flex; flex-direction: column; align-items: flex-start; gap: .6rem; padding: .6rem 0; }
   .nav-toggle { display: inline-flex; }
 }
+/* Logo als Bild: Größe und Ausrichtung */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  padding: .2rem 0;
+}
+.logo img {
+  height: 36px;       /* visuelle Höhe des Logos */
+  width: auto;        /* Breite proportional */
+}
+
+/* Optional: auf kleineren Screens Logo etwas kleiner */
+@media (max-width: 520px) {
+  .logo img { height: 30px; }
+}
