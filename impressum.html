@@ -13,7 +13,17 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="logo" href="/">CG</a>
+      <a class="logo" href="/" aria-label="Startseite">
+        <img
+          src="/assets/img/logo.png"
+          alt="Christoph Gschnaidtner"
+          width="140" height="36"
+          fetchpriority="high"
+          decoding="async"
+          loading="eager"
+          srcset="/assets/img/logo.png 1x, /assets/img/logo@2x.png 2x"
+        />
+      </a>
       <nav class="menu" aria-label="Hauptmenü">
         <a href="/">Startseite</a>
         <a href="/datenschutz">Datenschutz</a>
