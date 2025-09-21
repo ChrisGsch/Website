@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+
+# Optional: Security & Caching Header (minimal, kann erweitert werden)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# 404 wird von Netlify automatisch erkannt, kein Redirect nötig.
