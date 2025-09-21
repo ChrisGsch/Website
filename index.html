@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Christoph Gschnaidtner – Dozent & Berater (Datenanalyse, KI, Power BI, Blockchain)</title>
+  <meta name="description" content="Schulungen, Workshops und Beratung zu Datenanalyse, KI, Data Storytelling, Power BI und Blockchain. Dozent & Berater: Christoph Gschnaidtner." />
+  <meta name="author" content="Christoph Gschnaidtner" />
+  <link rel="canonical" href="https://www.christoph-gschnaidtner.de/" />
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+  <meta property="og:title" content="Christoph Gschnaidtner – Dozent & Berater" />
+  <meta property="og:description" content="Trainings & Beratung zu Datenanalyse, KI, Data Storytelling, Power BI & Blockchain." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.christoph-gschnaidtner.de/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">CG</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Menü öffnen">☰</button>
+      <nav id="site-menu" class="menu" aria-label="Hauptmenü">
+        <a href="#angebote">Angebote</a>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Christoph Gschnaidtner</h1>
+        <p class="subtitle">Dozent &amp; Berater für <strong>Datenanalyse</strong>, <strong>KI</strong>, <strong>Data Storytelling</strong>, <strong>Power&nbsp;BI</strong> &amp; <strong>Blockchain</strong>.</p>
+        <div class="cta">
+          <a class="button" href="#angebote">Angebote ansehen</a>
+          <a class="button ghost" href="#kontakt">Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="angebote" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Trainings</h2>
+          <ul class="list">
+            <li>Schulungen &amp; Workshops (Inhouse &amp; remote)</li>
+            <li>Data Storytelling &amp; Visualisierung</li>
+            <li>Power&nbsp;BI: Einsteiger bis Fortgeschritten</li>
+            <li>KI-Grundlagen &amp; praktische Use Cases</li>
+            <li>Blockchain-Grundlagen für Finanzinstitute</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Beratung</h2>
+          <ul class="list">
+            <li>Strategie &amp; Roadmaps (Daten &amp; KI)</li>
+            <li>Implementierung &amp; Enablement</li>
+            <li>Dashboard-Konzeption &amp; Review</li>
+            <li>Governance, Datenqualität &amp; Prozessen</li>
+            <li>PoCs zu KI/Automation im Banking</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="ueber-mich" class="section alt">
+      <div class="container narrow">
+        <h2>Über mich</h2>
+        <p>Ich unterstütze Unternehmen – insbesondere Banken im Genossenschaftsverbund – dabei, aus Daten Wirkung zu machen: fundierte Entscheidungen, klare Stories und schnelle Umsetzung. Praxisnah, strukturiert und mit Fokus auf Nutzen.</p>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <div class="container narrow">
+        <h2>Kontakt</h2>
+        <p>Schreiben Sie mir direkt an <a href="mailto:hello@christoph-gschnaidtner.de">hello@christoph-gschnaidtner.de</a> oder nutzen Sie das Formular:</p>
+
+        <!-- Netlify Forms: funktioniert ohne Backend -->
+        <form name="kontakt" method="POST" data-netlify="true" class="form">
+          <input type="hidden" name="form-name" value="kontakt" />
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="email">E-Mail</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="nachricht">Nachricht</label>
+            <textarea id="nachricht" name="nachricht" rows="6" required></textarea>
+          </div>
+          <button class="button" type="submit">Senden</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Christoph Gschnaidtner · <a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a></small>
+    </div>
+  </footer>
+
+  <script src="/assets/js/script.js" defer></script>
+</body>
+</html>
