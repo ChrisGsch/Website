@@ -101,7 +101,8 @@
         <p>Schreiben Sie mir direkt an <a href="mailto:mail@christoph-gschnaidtner.de">mail@christoph-gschnaidtner.de</a> oder nutzen Sie das Formular:</p>
 
         <!-- Netlify Forms: funktioniert ohne Backend -->
-        <form name="kontakt" method="POST" data-netlify="true" class="form">
+        <!-- <form name="kontakt" method="POST" data-netlify="true" class="form"> -->
+        <form action="https://FORM-DIENST.io/f/DEIN-ENDPOINT" method="POST">
           <input type="hidden" name="form-name" value="kontakt" />
           <div class="field">
             <label for="name">Name</label>
@@ -121,6 +122,8 @@
     </section>
   </main>
 
+
+  
   <footer class="site-footer">
     <div class="container">
       <small>© <span id="year"></span> Christoph Gschnaidtner · <a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a></small>
