@@ -23,3 +23,11 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.site-header');
+  if (window.scrollY > 40) {
+    header.classList.add('shrink');
+  } else {
+    header.classList.remove('shrink');
+  }
+});
