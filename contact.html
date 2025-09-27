@@ -70,25 +70,20 @@
       <div class="container narrow">
         <h2>Kontakt</h2>
         <p>Schreiben Sie mir direkt an <a href="mailto:mail@christoph-gschnaidtner.de">mail@christoph-gschnaidtner.de</a> oder nutzen Sie das Formular:</p>
-
-        <!-- Netlify Forms: funktioniert ohne Backend -->
-        <!-- <form name="kontakt" method="POST" data-netlify="true" class="form"> -->
-        <form action="https://submit-form.com/URB544MqQ" method="POST">
-          <input type="hidden" name="form-name" value="kontakt" />
-          <div class="field">
+          <form action="https://submit-form.com/URB544MqQ">
             <label for="name">Name</label>
-            <input id="name" name="name" required />
-          </div>
-          <div class="field">
+            <input type="text" id="name" name="name" placeholder="Name" required="" />
             <label for="email">E-Mail</label>
-            <input id="email" name="email" type="email" required />
-          </div>
-          <div class="field">
-            <label for="nachricht">Ihre Nachricht</label>
-            <textarea id="nachricht" name="nachricht" rows="6" required></textarea>
-          </div>
-          <button class="button" type="submit">Senden</button>
-        </form>
+            <input type="email" id="email" name="email" placeholder="Email" required="" />
+            <label for="message">Nachricht</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              required=""
+            ></textarea>
+            <button type="submit">Senden</button>
+          </form>
       </div>
     </section>
   </main>
